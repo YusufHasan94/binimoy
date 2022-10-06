@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px){
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+/*home header area*/
+.homeHeader{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.logo-container i{
+    font-size: 28px;
+}
+.logo-container img{
+    width: 60px;
+}
+/* user profile area */
+.up-header{
+    background-color: whitesmoke;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
+}
+.up-header i{
+    font-size: 24px;
+}.up-header h1{
+    margin: 0;
+    padding: 5px;
+    font-size: 24px;
+}
+section{
+    height: 100vh;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.user-img{
+    max-width: 120px;
+}
+.personal-info{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 18px;
+}
+.personal-info input, textarea{
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/*common nav section*/
+nav{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+}
+.menu-container i, a{
+    font-size: 24px;
+}
+.menu-container i, a{
+    text-decoration: none;
+    color: black;
+}
