@@ -13,6 +13,7 @@ body{
 .homeHeader{
     background-color: whitesmoke;
     padding: 5px;
+    height: 80px;
 }
 .logo-container{
     display: flex;
@@ -33,6 +34,7 @@ body{
     gap: 5px;
     align-items: center;
     padding: 5px;
+    height: 80px;
 }
 .up-header i{
     font-size: 24px;
@@ -42,7 +44,7 @@ body{
     font-size: 24px;
 }
 section{
-    height: 100vh;
+    height: 690px;
 }
 .img-container{
     display: flex;
@@ -85,9 +87,52 @@ nav{
     text-align: center;
 }
 .menu-container i, a{
-    font-size: 24px;
+    font-size: 18px;
 }
 .menu-container i, a{
     text-decoration: none;
     color: black;
+}
+/*settings section*/
+.userProfileSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 5px;
+}
+.imgofUser img{
+    width: 80px;
+}
+.dataofUser{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.fa-pen-to-square{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(10, 10, 48);
+    color: white;
+    text-align: center;
+}
+.settingOption{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;    
+}
+.settingOption a, i{
+    font-size: 22px;
+    color: black;
+}
+.settingOption i{
+    color: #367087;
+}
+.settingItems{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
 }
