@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+
+  font-family: tahoma;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* header portion */
+header {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 1px rgb(219, 219, 219);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+}
+
+/* main portion */
+main {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.bd-example {
+  margin: 1rem 0.7rem;
+}
+
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.section_header a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: rgb(39, 127, 199);
+}
+
+.categories {
+  width: 98%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.categories a {
+  display: block;
+  box-sizing: border-box;
+  box-shadow: 0.1px 1px 2px 0.5px rgb(211, 211, 211);
+  border-radius: 1rem;
+  /* overflow: hidden; */
+  height: 16rem !important;
+  width: 16rem !important;
+}
+
+.categories a img {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 1rem;
+}
+
+.box_section {
+  display: inline-block;
+}
+
+.c_review {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem 0;
+  gap: 1rem;
+  width: 32rem !important;
+  height: 17rem !important;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1px 1px rgb(219, 219, 219);
+  position: relative;
+}
+
+.c_review .user_img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 5rem;
+  position: absolute;
+  top: -2.5rem;
+  right: 3rem;
+}
+
+.c_review span {
+  color: rgb(39, 127, 199);
+}
+
+.main_icon {
+  height: 6rem;
+}
+
+/* footer portion */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer_navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_navigation a {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  width: 25%;
+  padding: 1rem;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.footer_navigation a:hover {
+  background-color: #dfdfdf;
+}
+
+.footer_navigation a i {
+  font-size: 2rem;
+  color: #495057;
+}
+
+.footer_navigation .fa-house {
+  color: rgb(39, 127, 199);
+}
+
+.footer_navigation a span {
+  color: #495057;
+}
+
+.footer_navigation .fa-house_span {
+  color: rgb(39, 127, 199);
+}
