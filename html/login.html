@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b11d2abc63.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Binimoy -Settings</title>
+    <title>Binimoy -Log in</title>
 </head>
 <body>
     <div class="container">
+
         <header class="homeHeader">
             <div class="logo-container">
                 <img src="../picture/binimoy.png" alt="binimoy logo">
@@ -19,37 +20,26 @@
             </div>
         </header>
         <section>
-            <div class="settingContainer">
-                <div class="userProfileSection">
-                    <div class="imgofUser">
-                        <img src="../picture/user.jpg" alt="user image">
+            <div class="loginContainer">
+                <h1>Welcome to binimoy</h1>
+                <div class="middlesection">
+                    <label for="">Email</label>
+                    <input type="email" name="" id="email" placeholder="Enter your email address">
+                    <label for="">Password</label>
+                    <input type="password" name="" id="password" placeholder="Enter your password">
+                    <div id="submitSection">
+                        <input type="submit" value="Log In" id="submit">
                     </div>
-                    <div class="dataofUser">
-                        <span>User Name</span>
-                        <span>017********</span>
-                    </div>
-                    <a href="../html/up.html">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </a>
+                    <span>Forgot your password?</span>
                 </div>
-                <hr>
-                <div class="settingOption">
-                    <div class="privacyPolicy settingItems">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <a href="../html/privacy.html">Privacy Policy</a>
-                    </div>
-                    <div class="tearmsandCon settingItems">
-                        <i class="fa-solid fa-file"></i>
-                        <a href="../html/terms.html">Terms & Condition</a>
-                    </div>
-                    <div class="aboutUs settingItems">
-                        <i class="fa-solid fa-users"></i>
-                        <a href="#">About Us</a>
-                    </div>
+                <div class="newAccount">
+                    <span>Don't have account?</span>
+                    <a href="../html/create.html">Create New Account</a>
                 </div>
+                <hr style="width: 50%; height:2px; background-color: blue; border-radius: 25px;">
+
             </div>
         </section>
-    
         <nav>
             <div class="nav-container">
                 <div class="menu-container">
@@ -66,7 +56,7 @@
                 </div>
                 <div class="menu-container">
                     <i class="fa-sharp fa-solid fa-gear"></i>
-                    <a href="settings.html">Settings</a>
+                    <a href="../html/settings.html">Settings</a>
                 </div>
             </div>
         </nav>
