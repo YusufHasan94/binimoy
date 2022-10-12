@@ -5,61 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b11d2abc63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Binimoy -Log in</title>
 </head>
 <body>
-    <div class="container">
 
-        <header class="homeHeader">
-            <div class="logo-container">
-                <img src="../picture/binimoy.png" alt="binimoy logo">
-                <a href="../html/login.html">
-                    <i class="fa-solid fa-user"></i>
-                </a>
-            </div>
-        </header>
-        <section>
-            <div class="loginContainer">
-                <h1>Welcome to binimoy</h1>
-                <div class="middlesection">
-                    <label for="">Email</label>
-                    <input type="email" name="" id="email" placeholder="Enter your email address">
-                    <label for="">Password</label>
-                    <input type="password" name="" id="password" placeholder="Enter your password">
-                    <div id="submitSection">
-                        <input type="submit" value="Log In" id="submit">
-                    </div>
-                    <span>Forgot your password?</span>
-                </div>
-                <div class="newAccount">
-                    <span>Don't have account?</span>
-                    <a href="../html/create.html">Create New Account</a>
-                </div>
-                <hr style="width: 50%; height:2px; background-color: blue; border-radius: 25px;">
-
-            </div>
-        </section>
-        <nav>
-            <div class="nav-container">
-                <div class="menu-container">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="../index.html">Home</a>
-                </div>
-                <div class="menu-container">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                   <a href="#">Sell</a>
-                </div>
-                <div class="menu-container">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <a href="#">Buy</a>
-                </div>
-                <div class="menu-container">
-                    <i class="fa-sharp fa-solid fa-gear"></i>
-                    <a href="../html/settings.html">Settings</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <header class="homeHeader">
+        <div class="logo-container">
+            <img src="../picture/binimoy.png" alt="binimoy logo">
+            <a href="../html/login.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+      <section>
+          <div class="loginContainer">
+              <h1>Welcome to binimoy</h1>
+              <div class="middlesection">
+                  <label for="">Email</label>
+                  <input type="email" name="" id="email" placeholder="Enter your email address">
+                  <label for="">Password</label>
+                  <input type="password" name="" id="password" placeholder="Enter your password">
+                  <div id="submitSection">
+                      <input type="submit" value="Log In" id="submit">
+                  </div>
+                  <span>Forgot your password?</span>
+              </div>
+              <div class="newAccount">
+                  <span>Don't have account?</span>
+                  <a href="../html/create.html">Create New Account</a>
+              </div>  
+          </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="footer_navigation">
+        <a href="../index.html">
+          <i class="fa-solid fa-house"></i>
+          <span class="link_value fa-house_span">Home</span>
+        </a>
+        <a href="post.html">
+          <i class="fa-solid fa-newspaper"></i>
+          <span class="link_value">Post</span>
+        </a>
+        <a href="search.html">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          <span class="link_value">Search</span>
+        </a>
+        <a href="settings.html">
+          <i class="fa-sharp fa-solid fa-gear"></i>
+          <span class="link_value">Settings</span>
+        </a>
+      </nav>
+    </footer>
 </body>
 </html>

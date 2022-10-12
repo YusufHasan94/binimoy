@@ -41,9 +41,6 @@ body{
     padding: 5px;
     font-size: 24px;
 }
-section{
-    
-}
 .img-container{
     display: flex;
     justify-content: center;
@@ -68,32 +65,6 @@ section{
 }
 
 /*common nav section*/
-nav{
-    background-color: whitesmoke;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-.nav-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 5px;
-}
-.menu-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    text-align: center;
-}
-.menu-container i, a{
-    font-size: 18px;
-}
-.menu-container i, a{
-    text-decoration: none;
-    color: black;
-}
 /*settings section*/
 .userProfileSection{
     display: flex;
@@ -263,4 +234,59 @@ form label{
 }
 .commonContainer ol li{
     font-size: 16px;
+}
+/*product*/
+.productTitle{
+    font-size: 18px;
+    color: black;
+    margin: 5px;
+}
+.productContainer{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.productContainer a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+}
+.productContainer a i{
+    font-size: 24px;
+}
+.productContainer a span{
+    font-size: 18px;
+}
+.carousel-caption{
+    color: white;
+}
+.search{
+    padding: 10px;
+}
+#searchForm{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+#searchArea{
+    width: 80%;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 5px;
+}
+#searchSubmit{
+    width: 20%;
+    font-size: 16px;
+    color: black;
+    border-radius: 10px;
 }
