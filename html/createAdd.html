@@ -1,92 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="picture/binimoy.png" type="image/x-icon" />
 
-    <link
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/f7953d3d50.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../css/style2.css" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="picture/binimoy.png" type="image/x-icon" />
 
-    <title>Binimoy -Create Add</title>
-  </head>
-  <body>
-    <header class="homeHeader">
-        <div class="logo-container">
-            <img src="../picture/binimoy.png" alt="binimoy logo">
-            <a href="../html/login.html">
-                <i class="fa-solid fa-user"></i>
-            </a>
-        </div>
-      </header>  
-    <main>
-        <section>
-            <div class="container addForm">
-                <h5>Create a new add post</h5>
-                <form action=""> 
-                    <input type="text" name="" id="" placeholder="Add Title">
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Description"></textarea>
-                    <input type="number" name="" id="" placeholder="Amount to charge">
-                    <span>Add your product picture</span>
-                    <input type="file" name="" id="">
-                </form>
-                <a href="grettings.html">
-                    <input type="submit" value="Submit" id="submit">
-                </a>
-            </div>
-        </section>
-    </main>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f7953d3d50.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style2.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-    <footer>
-      <nav class="footer_navigation">
-        <a href="../index.html">
-          <i class="fa-solid fa-house"></i>
-          <span class="link_value fa-house_span">Home</span>
-        </a>
-        <a href="../html/post.html">
-          <i class="fa-solid fa-newspaper"></i>
-          <span class="link_value">Post</span>
-        </a>
-        <a href="../html/search.html">
-          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-          <span class="link_value">Search</span>
-        </a>
-        <a href="../html/settings.html">
-          <i class="fa-sharp fa-solid fa-gear"></i>
-          <span class="link_value">Settings</span>
-        </a>
-      </nav>
-    </footer>
+  <title>Binimoy -Create Add</title>
+</head>
 
-    <script
-      src="https://kit.fontawesome.com/f7953d3d50.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<body>
+  <header class="homeHeader">
+    <div class="logo-container">
+      <img src="../picture/binimoy.png" alt="binimoy logo">
+      <a href="../html/login.html">
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container addForm">
+        <h5>Create a new add post</h5>
+        <form action="" id="submitAdForm">
+          <input type="text" name="" id="title" placeholder="Add Title">
+          <textarea name="" id="description" cols="30" rows="5" placeholder="Description"></textarea>
+          <input type="number" name="" id="amount" placeholder="Amount to charge">
+          <span>Add your product picture</span>
+          <input type="file" name="" id="imageFile">
+        </form>
+
+        <input type="submit" value="Submit" id="submit">
+        <p id="submissionSuccess" hidden>
+          <i class="fa-solid fa-check-circle"></i>
+          <span>Submission successful</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer_navigation">
+      <a href="../index.html">
+        <i class="fa-solid fa-house"></i>
+        <span class="link_value fa-house_span">Home</span>
+      </a>
+      <a href="../html/post.html">
+        <i class="fa-solid fa-newspaper"></i>
+        <span class="link_value">Post</span>
+      </a>
+      <a href="../html/search.html">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <span class="link_value">Search</span>
+      </a>
+      <a href="../html/settings.html">
+        <i class="fa-sharp fa-solid fa-gear"></i>
+        <span class="link_value">Settings</span>
+      </a>
+    </nav>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/f7953d3d50.js" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!--Add jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js"></script>
+  <script type="module">
+    const firebaseConfig = {
+      apiKey: "AIzaSyBgbFCM7LlhOLErYokDlfehmfgyGy7kEfA",
+      authDomain: "binimoy-a4dbc.firebaseapp.com",
+      databaseURL: "https://binimoy-a4dbc-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "binimoy-a4dbc",
+      storageBucket: "binimoy-a4dbc.appspot.com",
+      messagingSenderId: "723259560590",
+      appId: "1:723259560590:web:e975f620ce9f2c2942efdf"
+    };
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
+    $("#submit").click(function () {
+      var title = $("#title").val();
+      var description = $("#description").val();
+      var amount = $("#amount").val();
+
+      var imageFile = document.getElementById("imageFile").files[0];
+
+      var storageRef = firebase.storage().ref();
+      var imageRef = storageRef.child('images/' + imageFile.name);
+      imageRef.put(imageFile).then(function (snapshot) {
+        console.log('Uploaded a blob or file!');
+        imageRef.getDownloadURL().then(function (url) {
+          console.log(url);
+          // send the data to firebase
+          firebase.database().ref('posts/').push({
+            title: title,
+            description: description,
+            amount: amount,
+            image: url
+          });
+        }).then(function () {
+          document.getElementById("submitAdForm").hidden = true;
+          document.getElementById("submit").hidden = true;
+          document.getElementById("submissionSuccess").hidden = false;
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
 </html>
