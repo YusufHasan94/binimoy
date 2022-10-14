@@ -290,3 +290,130 @@ form label{
     color: black;
     border-radius: 10px;
 }
+.addForm form{
+    margin: 10px 0;
+    padding: 10px;
+}
+.addForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.addForm h5{
+    font-size: 22px;
+    font-weight: 600;
+}
+.addForm form input{
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+}
+.addForm form span{
+    font-size: 14px;
+}
+#submit{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #236ba6;
+}
+.greetingsCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greetings{
+    background-color: #7a7a7a;
+    color: black;
+}
+.productDetails{
+    padding: 10px;
+}
+.productDetails h1{
+    font-size: 26px;
+    font-weight: 500;    
+}
+.productDetails h3{
+    font-size: 18px;
+    font-weight: 500;    
+}
+.productDetails p{
+    font-size: 14px;
+    font-weight: 500;    
+}
+.productDetails a{
+    width: 100%;
+    font-size: 18px;
+    background-color: #3549b0;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 3px; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;  
+}
+.pickProduct{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pickProduct span{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px;
+}
+.pickProduct select{
+    font-size: 14px;
+    padding: 3px;
+    border: none;
+    background-color: rgb(234, 237, 240);
+    border-radius: 10px;
+}
+.productContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+.productContainer div div a{
+    background-color: #3549b0;
+    color: #ece9e9;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.grettings{
+    width: 100%;
+    display: flex;
+}
+.grettings .content{
+    width: 90%;
+    background-color: rgb(35, 86, 131);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.grettings .content div{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.grettings .content div i{  
+    font-size: 30px;
+    color: white;
+}
+.grettings .content div span{  
+    font-size: 18px;
+    color: white;
+}
